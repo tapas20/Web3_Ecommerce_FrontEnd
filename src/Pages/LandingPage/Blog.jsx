@@ -1,8 +1,8 @@
 import React from "react";
-import BlogImg1 from "../assets/Car.png";
-import BlogImg2 from "../assets/Property.png";
-import BlogImg3 from "../assets/Watch.png";
-import BlogImg4 from "../assets/cur-1.svg";
+import BlogImg1 from "../../assets/Car.png";
+import BlogImg2 from "../../assets/Property.png";
+import BlogImg3 from "../../assets/Watch.png";
+import BlogImg4 from "../../assets/cur-1.svg";
 
 const Blog = () => {
   const blogPosts = [

@@ -1,14 +1,14 @@
 import React from "react";
-import HeroImg from "../assets/hero.jpg";
-import BitcoinistImg from "../assets/Bitcoinist.svg";
-import CointelegraphImg from "../assets/Cointelegraph.svg";
-import YahooImg from "../assets/Yahoo.svg";
-import Cur1Img from "../assets/cur-1.svg";
-import Cur2Img from "../assets/cur-2.svg";
-import Cur3Img from "../assets/cur-3.svg";
-import Cur4Img from "../assets/cur-4.svg";
-import Cur5Img from "../assets/cur-5.svg";
-import Cur6Img from "../assets/cur-6.svg";
+import HeroImg from "../../assets/hero.jpg";
+import BitcoinistImg from "../../assets/Bitcoinist.svg";
+import CointelegraphImg from "../../assets/Cointelegraph.svg";
+import YahooImg from "../../assets/Yahoo.svg";
+import Cur1Img from "../../assets/cur-1.svg";
+import Cur2Img from "../../assets/cur-2.svg";
+import Cur3Img from "../../assets/cur-3.svg";
+import Cur4Img from "../../assets/cur-4.svg";
+import Cur5Img from "../../assets/cur-5.svg";
+import Cur6Img from "../../assets/cur-6.svg";
 
 const CryptoTradingBanner = () => {
   return (

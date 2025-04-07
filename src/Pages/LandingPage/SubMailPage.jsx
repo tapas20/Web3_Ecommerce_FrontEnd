@@ -1,4 +1,10 @@
 import React, { useState } from "react";
+import {
+  FaTwitter,
+  FaTelegramPlane,
+  FaDiscord,
+  FaInstagram,
+} from "react-icons/fa";
 
 const SubscribePage = () => {
   const [email, setEmail] = useState("");
@@ -68,20 +74,21 @@ const SubscribePage = () => {
               </p>
 
               <div className="flex justify-center gap-4">
-                {["Twitter", "Telegram", "Discord", "Instagram"].map(
-                  (social) => (
-                    <a
-                      key={social}
-                      href="#"
-                      className="w-12 h-12 flex items-center justify-center bg-gray-700 hover:bg-gray-600 rounded-full transition-colors duration-200"
-                      aria-label={social}
-                    >
-                      <span className="text-white font-medium text-sm">
-                        {social.charAt(0)}
-                      </span>
-                    </a>
-                  )
-                )}
+                {[
+                  { name: "Twitter", icon: <FaTwitter /> },
+                  { name: "Telegram", icon: <FaTelegramPlane /> },
+                  { name: "Discord", icon: <FaDiscord /> },
+                  { name: "Instagram", icon: <FaInstagram /> },
+                ].map((social) => (
+                  <a
+                    key={social.name}
+                    href="#"
+                    className="w-12 h-12 flex items-center justify-center bg-gray-700 hover:bg-gray-600 rounded-full transition-colors duration-200"
+                    aria-label={social.name}
+                  >
+                    <span className="text-white text-xl">{social.icon}</span>
+                  </a>
+                ))}
               </div>
             </div>
           </div>

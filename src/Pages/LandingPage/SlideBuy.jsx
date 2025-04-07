@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import CarImg from "../assets/Car.png";
-import PropertyImg from "../assets/Property.png";
-import WatchImg from "../assets/Watch.png";
+import CarImg from "../../assets/Car.png";
+import PropertyImg from "../../assets/Property.png";
+import WatchImg from "../../assets/Watch.png";
 
 const slides = [CarImg, PropertyImg, WatchImg];
 

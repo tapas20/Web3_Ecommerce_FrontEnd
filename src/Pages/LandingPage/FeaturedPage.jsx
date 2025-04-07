@@ -1,8 +1,8 @@
 import React from "react";
-import FeaturedImg1 from "../assets/FeaturedImg1.png";
-import FeaturedImg2 from "../assets/FeaturedImg2.png";
-import FeaturedImg3 from "../assets/FeaturedImg3.png";
-import FeaturedImg4 from "../assets/FeaturedImg4.png";
+import FeaturedImg1 from "../../assets/FeaturedImg1.png";
+import FeaturedImg2 from "../../assets/FeaturedImg2.png";
+import FeaturedImg3 from "../../assets/FeaturedImg3.png";
+import FeaturedImg4 from "../../assets/FeaturedImg4.png";
 
 const FeaturedPage = () => {
   const featuredCategories = [

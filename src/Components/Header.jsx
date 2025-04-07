@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
+
 import {
   FiChevronDown,
   FiGlobe,
@@ -36,18 +38,27 @@ const Header = () => {
           </div>
 
           <div className="flex flex-wrap justify-center gap-2 md:gap-4 text-sm mb-2 md:mb-0">
-            <button className="hover:text-blue-400 whitespace-nowrap">
+            <Link
+              to="/buybitcoin"
+              className="hover:text-blue-400 whitespace-nowrap"
+            >
               Buy Bitcoin
-            </button>
-            <button className="hover:text-blue-400 whitespace-nowrap">
+            </Link>
+
+            <Link to="/earn" className="hover:text-blue-400 whitespace-nowrap">
               Earn
-            </button>
-            <button className="hover:text-blue-400 whitespace-nowrap">
-              T&Cs
-            </button>
-            <button className="hover:text-blue-400 whitespace-nowrap">
+            </Link>
+
+            <Link to="/terms" className="hover:text-blue-400 whitespace-nowrap">
+              T&C
+            </Link>
+
+            <Link
+              to="/contact"
+              className="hover:text-blue-400 whitespace-nowrap"
+            >
               Contract
-            </button>
+            </Link>
           </div>
 
           <div className="hidden sm:flex items-center space-x-6">
@@ -153,27 +164,36 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-6 text-sm">
-            <a href="#" className="hover:text-blue-400 flex items-center">
+            <Link to="/" className="hover:text-blue-400 flex items-center">
               <FiHome className="mr-1" /> Home
-            </a>
-            <a href="#" className="hover:text-blue-400 flex items-center">
+            </Link>
+            <Link
+              to="/automotive"
+              className="hover:text-blue-400 flex items-center"
+            >
               <FiTruck className="mr-1" /> Automotive
-            </a>
-            <a href="#" className="hover:text-blue-400 flex items-center">
+            </Link>
+            <Link
+              to="watches"
+              className="hover:text-blue-400 flex items-center"
+            >
               <FiClock className="mr-1" /> Watches
-            </a>
-            <a href="#" className="hover:text-blue-400 flex items-center">
+            </Link>
+            <Link
+              to="property"
+              className="hover:text-blue-400 flex items-center"
+            >
               <FiMapPin className="mr-1" /> Property
-            </a>
-            <a href="#" className="hover:text-blue-400 flex items-center">
+            </Link>
+            <Link to="sell" className="hover:text-blue-400 flex items-center">
               <FiDollarSign className="mr-1" /> Sell
-            </a>
+            </Link>
           </nav>
 
           <div className="hidden md:flex items-center space-x-4">
-            <a href="#" className="hover:text-blue-400 flex items-center">
+            <Link to="/sign" className="hover:text-blue-400 flex items-center">
               <FiUser className="mr-1" /> My account
-            </a>
+            </Link>
             <a href="#" className="hover:text-blue-400 flex items-center">
               <FiHeart className="mr-1" /> Wish List
             </a>
