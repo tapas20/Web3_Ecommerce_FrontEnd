@@ -10,6 +10,7 @@ import Watches from "./Pages/Watches/Watches";
 import Property from "./Pages/Property/Property";
 import Sell from "./Pages/Sell/Sell";
 import Sign from "./Pages/MyAccount/Sign";
+import ProductDetails from "./Pages/ProductDetailsPage/ProductDetails";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
             <Route path="/property" element={<Property />} />
             <Route path="/sell" element={<Sell />} />
             <Route path="/sign" element={<Sign />} />
+            <Route path="/productdetails" element={<ProductDetails />} />
           </Route>
         </Routes>
       </BrowserRouter>

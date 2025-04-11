@@ -4,7 +4,7 @@ import TrendingImg1 from "../../assets/img1.png";
 import TrendingImg2 from "../../assets/img2.png";
 import TrendingImg3 from "../../assets/img3.jpg";
 import TrendingImg4 from "../../assets/img4.jpg";
-
+import { Link } from "react-router-dom";
 
 const RecentlyAdded = () => {
   const trendingItems = [
@@ -65,9 +65,12 @@ const RecentlyAdded = () => {
                   <img className="mr-2" src={Cur1Img} alt="Cur1Img" />
                   {item.price}
                 </span>
-                <button className="cursor-pointer bg-amber-600 text-white px-4 py-1 rounded hover:bg-amber-500 transition-colors">
+                <Link
+                  to={"/productdetails"}
+                  className="cursor-pointer bg-amber-600 text-white px-4 py-1 rounded hover:bg-amber-500 transition-colors"
+                >
                   Buy
-                </button>
+                </Link>
               </div>
             </div>
           </div>

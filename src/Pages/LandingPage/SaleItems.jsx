@@ -8,6 +8,7 @@ import TrendingImg5 from "../../assets/img5.png";
 import TrendingImg6 from "../../assets/img6.jpeg";
 import TrendingImg7 from "../../assets/img7.png";
 import TrendingImg8 from "../../assets/img8.jpg";
+import { Link } from "react-router-dom";
 
 const SaleItems = () => {
   const trendingItems = [
@@ -92,9 +93,9 @@ const SaleItems = () => {
                   <img className="mr-2" src={Cur1Img} alt="Cur1Img" />
                   {item.price}
                 </span>
-                <button className="cursor-pointer bg-amber-600 text-white px-4 py-1 rounded hover:bg-amber-500 transition-colors">
+                <Link to={"/productdetails"} className="cursor-pointer bg-amber-600 text-white px-4 py-1 rounded hover:bg-amber-500 transition-colors">
                   Buy
-                </button>
+                </Link>
               </div>
             </div>
           </div>
